@@ -1,0 +1,14 @@
+{% extends "main/base.html" %}
+
+{% block body %}
+    <h3> Navigation </h3>
+
+    <ul>
+        <li> <a href="{% url 'restaurants' %}?filter=a2z&reverse=False">Restaurants</a> </li>
+        <li> <a href=""
+            onclick="window.open({% url 'addRestaurant' %}, 
+            '', 
+            'width=450 ,height=400'); 
+            return false;">Add Restaurant</a> </li>
+    </ul>
+{% endblock body %}
